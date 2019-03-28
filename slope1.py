@@ -4,6 +4,10 @@
 # Date: 3/27/2019
 #
 # Find the slope of a line given two points. 
+# Write the equation of the line in 3 forms
+# 1. slope intercept form
+# 2. point slope form
+# 3. standard form
 #
 # Inputs:
 #   ix1: x coordinate of point 1
