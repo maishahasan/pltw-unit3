@@ -6,10 +6,10 @@
 # Find the slope of a line given two points. 
 #
 # Inputs:
-#   x1: x coordinate of point 1
-#   y1: y coordinate of point 1
-#   x2: x coordinate of point 2
-#   y2: y coordinate of point 2
+#   ix1: x coordinate of point 1
+#   iy1: y coordinate of point 1
+#   ix2: x coordinate of point 2
+#   iy2: y coordinate of point 2
 #
 # Outputs:
 #   m: slope of the line    
@@ -34,7 +34,6 @@ def validate_input(x1,y1,x2,y2):
 
     return True
 
-# main
 # User enters the coordinates of 2 points (x1, y1) and (x2, y2)
 ix1=input("Enter x coordinate of point 1: ")
 iy1=input("Enter y coordinate of point 1: ")
