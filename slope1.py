@@ -15,20 +15,20 @@
 #   m: slope of the line    
 
 # Verify the coordinates are numeric. 
-def validate_input(arg-x1,arg-y1,arg-x2,arg-y2):
-    if not arg-x1.isnumeric(): 
+def validate_input(arg_x1,arg_y1,arg_x2,arg_y2):
+    if not arg_x1.isnumeric(): 
         print ("Error: Enter a number for x1")
         return False
         
-    if not arg-y1.isnumeric(): 
+    if not arg_y1.isnumeric(): 
         print ("Error: Enter a number for y1")
         return False
     
-    if not arg-x2.isnumeric(): 
+    if not arg_x2.isnumeric(): 
         print ("Error: Enter a number for x2")
         return False
     
-    if not arg-y2.isnumeric(): 
+    if not arg_y2.isnumeric(): 
         print ("Error: Enter a number for y2")    
         return False
 
