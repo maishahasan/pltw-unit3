@@ -20,6 +20,28 @@
 
 # Verify the coordinates are numeric. 
 def validate_input(x1,y1,x2,y2):
+    
+    try:
+        x1 = float(x1)
+    except ValueError:
+        return False
+    
+    try:
+        y1 = float(y1)
+    except ValueError:
+        return False
+    
+    try:
+        x2 = float(x2)
+    except ValueError:
+        return False
+    
+    try:
+        y2 = float(y2)
+    except ValueError:
+        return False
+    
+    '''
     if not x1.isnumeric(): 
         print ("Error: Enter a number for x1")
         return False
@@ -35,7 +57,8 @@ def validate_input(x1,y1,x2,y2):
     if not y2.isnumeric(): 
         print ("Error: Enter a number for y2")    
         return False
-
+    '''
+    
     return True
 
 # User enters the coordinates of 2 points (x1, y1) and (x2, y2)
