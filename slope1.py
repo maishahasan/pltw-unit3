@@ -38,6 +38,9 @@ def horizontalLine(b) :
     
 ## 
 #  Diagonal Line
+#  m is the slope of the line
+#  x1 is the x-coordinate of point1
+#  y1 is the y-coordinate of point1
 #
 def diagonalLine(x1, y1, m) :
     print ("slope = ", m)
