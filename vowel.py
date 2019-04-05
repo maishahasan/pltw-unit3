@@ -10,7 +10,7 @@
 #  a consonant.  Otherwise your program should display a message indicating that the
 #  letter is a consonant.
 def main():
-  day = input("Enter a letter of the alphabet: ") 
+  letter = input("Enter a letter of the alphabet: ") 
     
     
 # Start the program.
