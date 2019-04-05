@@ -7,7 +7,7 @@
 #  Display “28 or 29 days” for February so that leap years are addressed.
 
 def main():
-  day = input("Enter the name of a month: ") 
+  month = input("Enter the name of a month: ") 
     
     
 # Start the program.
