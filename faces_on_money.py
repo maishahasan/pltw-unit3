@@ -15,6 +15,8 @@
 #  Andrew Jackson     $20
 #  Ulysses S. Grant   $50
 #  Benjamin Franklin  $100
+# Note: For this program, there is no reason to convert the input to an int. 
+# The input is not being used in calculations.
 
 def main():
   money = input("Enter the denomination of the banknote: ") 
