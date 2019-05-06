@@ -6,16 +6,16 @@ class Order:
     #__init__ is the constructor. Is normally the first method in the class.
     #The constructor initalizes the data attributes (properties)
     #self is refers to the object
-    def __init__(self, name, type_sandwich, price_sandwich, size_beverage, price_beverage, size_frenchfries, price_frenchfries, num_ketchups, discount):
+    def __init__(self, name):
         self.name = name
-        self.type_sandwich = type_sandwich
-        self.price_sandwich = price_sandwich
-        self.size_beverage = size_beverage
-        self.price_beverage = price_beverage
-        self.size_frenchfries = size_frenchfries
-        self.price_frenchfries = price_frenchfries
-        self.num_ketchups = num_ketchups
-        self.discount = discount
+        self.type_sandwich = ""
+        self.price_sandwich = 0.00
+        self.size_beverage = ""
+        self.price_beverage = 0.00
+        self.size_frenchfries = ""
+        self.price_frenchfries = 0.00
+        self.num_ketchups = 0
+        self.discount = 0
 
     #__init__ is the constructor. Is normally the first method in the class.
     #The constructor initalizes the data attributes (properties)
