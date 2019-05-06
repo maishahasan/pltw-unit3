@@ -1,5 +1,5 @@
 #
-#  CSE_322_combo_menu_driver.py
+#  CSE_322_combo_list_loop_fn_class.py
 #  Author: Joan Goldberg
 #  Date: 5/5/2019
 #
@@ -17,17 +17,8 @@ def main():
     
     flag_another_order=(raw_input("Can I take your order? Y/N: ")).upper()    
     while flag_another_order == "Y": 
-        type_sandwich = ""
-        price_sandwich = 0.0
-        size_beverage = ""
-        price_beverage = 0.0
-        size_frenchfries = ""
-        price_frenchfries = 0.0
-        num_ketchups = 0
-        discount = 0
-        
         name=(raw_input("What is your name? ")).upper()    
-        order = Order(name, type_sandwich, price_sandwich, size_beverage, price_beverage, size_frenchfries, price_frenchfries, num_ketchups, discount)
+        order = Order(name)
     
         sandwich(order)
         beverage(order)
