@@ -38,9 +38,11 @@ def main():
         cost=cost+each_order.get_cost()
     print("Total cost of your order is: $" + str(cost))  
     
-    #Print the order
+    #Print the order. print calls the method __str__() for a user defined class. 
     for each_order in order_list:
-        print each_order.__str__()
+        print each_order 
+        #print each_order.__str__()
+        
         
     print("Thank you for your order!")
 
