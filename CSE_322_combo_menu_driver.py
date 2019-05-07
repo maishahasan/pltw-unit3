@@ -1,5 +1,5 @@
 #
-#  CSE_322_combo_list_loop_fn_class.py
+#  CSE_322_combo_menu_driver.py
 #  Author: Joan Goldberg
 #  Date: 5/5/2019
 #
