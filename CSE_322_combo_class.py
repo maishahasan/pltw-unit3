@@ -1,11 +1,16 @@
+##  This module defines a class that models a restaurant order.
 #
-#Order class
+
+# The order has a sandwich, beverage, french fries and ketchup.
+# There is a $1 discount if a sandwich, beverage and french fries are ordered.
 #
 class Order:
-
-    #__init__ is the constructor. Is normally the first method in the class.
-    #The constructor initalizes the data attributes (properties)
-    #self is refers to the object
+    ## Constructs an order with a given name.
+    # The constructor is the first method in the class.
+    # The constructor initalizes the data attributes (properties).
+    # __init__ is the constructor. 
+    # self refers to the object
+    #
     def __init__(self, name):
         self.name = name
         self.type_sandwich = ""
@@ -17,9 +22,8 @@ class Order:
         self.num_ketchups = 0
         self.discount = 0
 
-    #__init__ is the constructor. Is normally the first method in the class.
-    #The constructor initalizes the data attributes (properties)
-    #self is refers to the object
+    ## Sets the attributes of the order. 
+    # 
     def set_order(self, type_sandwich, price_sandwich, size_beverage, price_beverage, size_frenchfries, price_frenchfries, num_ketchups, discount):
         self.type_sandwich = type_sandwich
         self.price_sandwich = price_sandwich
@@ -30,32 +34,39 @@ class Order:
         self.num_ketchups = num_ketchups
         self.discount = discount
 
-    #What does this method do?
+    ## Gets the price of the sandwich. 
+    # 
     def get_price_sandwich(self):
             return self.price_sandwich
 
-    #What does this method do?
+    ## Gets the price of the beverage. 
+    # 
     def get_price_beverage(self):
             return self.price_beverage
 
-    #What does this method do?
+    ## Gets the price of the french fries. 
+    # 
     def get_price_frenchfries(self):
             return self.price_frenchfries
 
-    #What does this method do?
+    ## Gets the number of ketchups ordered. 
+    # 
     def get_num_ketchups(self):
             return self.num_ketchups
 
-    #What does this method do?
+    ## Gets the discount for the order. 
+    # 
     def get_discount(self):
             return self.discount
 
-    #What does this method do?
-    def get_cost(self):
+    ## Calculates the cost of the order. 
+    # 
+    def calc_cost(self):
         cost = self.price_sandwich + self.price_beverage + self.price_frenchfries + self.num_ketchups * .25 + self.discount
         return cost
 
-    #returns the order in a string
+    ## Returns the order in a string 
+    # 
     def __str__(self):
         print_order = self.name + ", "
         if self.type_sandwich !="":
