@@ -1,12 +1,13 @@
+##  CSE_322_combo_list_loop_fn_class.py
+#   Author: Joan Goldberg
+#   Date: 5/5/2019
 #
-#  CSE_322_combo_menu_driver.py
-#  Author: Joan Goldberg
-#  Date: 5/5/2019
+#   PLTW Activity 3.2.2 Combo Menu with Order Class
 #
-#  PLTW Activity 3.2.2 Combo Menu with Order Class
+
+##  This line of code tells the Python interpreter that it needs to reference the 
+#   CSE_322_combo_class.py file.
 #
-#This line of code tells the Python interpreter that it needs to reference the 
-#CSE_322_combo_class.py file.
 from CSE_322_combo_class import Order
 
 def main():
@@ -35,21 +36,20 @@ def main():
     #Print the Total Cost
     cost=0
     for each_order in order_list:
-        cost=cost+each_order.get_cost()
+        cost=cost+each_order.calc_cost()
     print("Total cost of your order is: $" + str(cost))  
     
-    #Print the order. print calls the method __str__() for a user defined class. 
+    #Print the order
     for each_order in order_list:
-        print each_order 
+        print each_order
         #print each_order.__str__()
-        
         
     print("Thank you for your order!")
 
 
-
+##  Sandwich Menu
+#
 def sandwich(order):    
-    #Sandwich Menu
     flag_sandwich=(raw_input("Hi " + order.name + ", " + "Do you want a sandwich? Y/N: ")).upper()    
     if flag_sandwich=="Y":
         print("* Sandwich Menu *")
@@ -68,8 +68,9 @@ def sandwich(order):
         else:
             order.type_sandwich=""
     
+##  Beverage Menu
+#
 def beverage(order):    
-    #Beverage Menu    
     flag_beverage=(raw_input("Do you want a beverage? Y/N: ")).upper()    
     if flag_beverage=="Y":
         print("* Beverage Menu *")
@@ -87,8 +88,9 @@ def beverage(order):
         else:
             order.size_beverage = ""
 
+##  French Fries Menu
+#
 def frenchfries(order):
-    #French Fries Menu    
     flag_frenchfries=(raw_input("Do you want french fries? Y/N: ")).upper()    
     if flag_frenchfries=="Y":
         print("* French Fries Menu *")
@@ -111,14 +113,17 @@ def frenchfries(order):
         else:
             order.size_frenchfries=""
     
+##  Ketchup
+#
 def ketchup(order):    
-    #Ketchup    
     order.num_ketchups=input("How many ketchup packets would you like? Cost $0.25 each: ")
     
+##  Discount
+#
 def take_discount(order):    
-    #Discount
     if order.type_sandwich!="" and order.size_beverage!="" and order.size_frenchfries!="":
         order.discount=-1
 
-#main program
+##  main program
+#
 main()
