@@ -1,15 +1,15 @@
-##  This module defines a class that models a restaurant order.
+## This module defines a class that models a restaurant order.
 #
 
-# The order has a sandwich, beverage, french fries and ketchup.
-# There is a $1 discount if a sandwich, beverage and french fries are ordered.
+## The order has a sandwich, beverage, french fries and ketchup.
+#  There is a $1 discount if a sandwich, beverage and french fries are ordered.
 #
 class Order:
     ## Constructs an order with a given name.
-    # The constructor is the first method in the class.
-    # The constructor initalizes the data attributes (properties).
-    # __init__ is the constructor. 
-    # self refers to the object
+    #  The constructor is the first method in the class.
+    #  The constructor initalizes the data attributes (properties).
+    #  __init__ is the constructor. 
+    #  self refers to the object
     #
     def __init__(self, name):
         self.name = name
